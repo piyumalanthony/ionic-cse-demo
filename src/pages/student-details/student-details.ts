@@ -14,8 +14,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'student-details.html',
 })
 export class StudentDetailsPage {
+  
+  name:string;
+  age:number;
+  address:string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+     this.name = this.navParams.get('name');
+     this.address = this.navParams.get('address');
+     this.age = this.navParams.get('age');
+    
+    
+    
+    
   }
 
   ionViewDidLoad() {

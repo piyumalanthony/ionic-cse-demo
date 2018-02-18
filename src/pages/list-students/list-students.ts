@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Student } from '../../data-models/Student';
 import { StudentService } from '../../services/student-service';
+import{StudentDetailsPage} from '../student-details/student-details'
 
 /**
  * Generated class for the ListStudentsPage page.

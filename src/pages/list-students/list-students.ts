@@ -34,5 +34,12 @@ export class ListStudentsPage {
           this.showList = true;
         });
   }
+  student_selected(student){
+    this.navCtrl.push(StudentDetailsPage,{
+      age:student.age,
+      name:student.name,
+      address:student.address
+    });
+  }
 
 }
